@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* 노말라이즈 */
+body,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #dee2ec;
+}
+
+* {
+	color: #333;
+	cursor: url(https://ifh.cc/g/tqKkTm.png) 2 2, auto;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+}
+
+/* 라이브러리 */
+.con {
+	max-width: var(--site-width);
+}
+
+/* 커스텀 */
+:root {
+	--site-width: 1400px;
+	--site-boxshadow: inset -1.5px -1.5px 0 0 #263238, inset 1.5px 1.5px 0 0 #dedcde, inset -3px -3px 0 0 #a099a1, inset 3px 3px 0 0 #fcfcfc;
+	--site-btn-boxshadow: inset -1.5px -1.5px 0 0 #fcfcfc, inset 1.5px 1.5px 0 0 #a099a1;
+}

@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+/* 기본폰트 */
+html > body {
+	font-family: "DungGeunMo", sans-serif;
+}
+
+/* 공통부분 구현 시작 */
+
+.h-bar {
+	background-color: #404756;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	top: 0;
+}
+
+.h-bar .h-logo {
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.h-bar .nav-title {
+	color: white;
+}
+
+.pc-nav {
+	position: fixed;
+	top: 40px;
+}
+
+.pc-nav-wrap {
+	width: 150px;
+	height: calc(100% - 80px);
+}
+
+.pc-nav-wrap ul {
+	padding: 10px 5px; 
+}
+
+.pc-nav-wrap ul li {
+	height: calc(20% - 20px);
+	width: 100%;
+	margin-top: 20px;
+}
+
+.pc-nav-wrap li a {
+	width: 100%;
+	height: 100%;
+}
+
+.pc-nav-wrap li img {
+	width: 40px;
+	margin: 0 auto;
+}
+
+.pc-nav-wrap li p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.pc-nav-wrap ul li:hover img {
+	opacity: 0.5;
+}
+
+.b-bar {
+	width: 100%;
+	height: 40px;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+	position: fixed;
+	bottom: 0;
+}
+
+.b-bar .b-logo {
+	width: 70px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+}
+
+.b-bar .b-logo img {
+	width: 40px;
+}
+
+.b-bar .time {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	box-shadow: var(--site-btn-boxshadow);
+	display: grid;
+	place-items: center;
+	height: 30px;
+	width: 100px;
+	margin: 0 3px;
+}
+
+.abm-icon {
+	width: 150px;
+	height: 30px;
+	box-shadow: var(--site-btn-boxshadow);
+	margin-left: 10px;
+}
+
+.abm-icon img {
+	width: 26px;
+	margin-right: 10px;
+}
+
+.pc-footer .blank {
+	width: 	calc(100% - 500px);
+}
+
+/* 공통부분 구현 끝 */
+
+/* About Me 구현 시작 */
+
+/* 고정 윈도우 배경, 탑 */
+.abm-window {
+	width: calc(100% - 150px);
+	height: 600px;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+}
+
+.abm-window-inner .window-nav {
+	background-color: #404756;
+}
+
+.abm-window-inner h3 {
+	width: calc(100% - 69px);
+	color: white;
+	font-size: 22px;
+}
+
+.abm-window-inner .window-btn {
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+	cursor: pointer;
+}
+
+.abm-window-inner .window-btn h3 {
+	margin-left: 5.5px;
+	margin-bottom: 1px;
+	color: #404756;
+}
+
+/* 윈도우 contents */
+.abm-window-inner h1 {
+	font-size: 30px;
+}
+
+/* info 페이지 구현 */
+.sec-1 {
+	box-shadow: var(--site-btn-boxshadow);
+	background: #fcfcfc;
+	padding: 20px 10px;
+}
+
+.sec-1 span {
+	display: block;
+	text-align: center;
+	font-family: "Noto Sans KR", sans-serif;
+}
+
+.sec-1 span:not(:first-child) {
+	margin-top: 10px;
+}
+
+.sec-2 div {
+	box-shadow: var(--site-btn-boxshadow);
+	background: #fcfcfc;
+	padding: 10px;
+}
+
+.sec-2 span {
+	display: block;
+	font-family: "Noto Sans KR", sans-serif;
+}
+
+.sec-3 .sec-3-l {
+	text-align: right;
+}
+
+.sec-3 span {
+	display: block;
+}
+
+.sec-3-r .title {
+	width: 50%;
+}
+
+.sec-3-r .inner-info {
+	padding: 0 5px;
+	box-shadow: var(--site-btn-boxshadow);
+	background: #fcfcfc;
+}
+
+.sec-3-r .link {
+	background-color: #404756;
+	padding: 0 20px;
+	color: white;
+	height: 35px;
+	border-radius: 17px;
+	cursor: pointer;
+	text-align: center;
+	width: 50%;
+	line-height: 35px;
+	margin-top: 10px;
+}
+
+.sec-3-r .link:hover {
+	opacity: 0.5;
+}
+
+.sec-3-r .link a {
+	display: block;
+	cursor: pointer;
+}

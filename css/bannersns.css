@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+/* 기본폰트 */
+html > body {
+	font-family: "DungGeunMo", sans-serif;
+}
+
+/* 공통부분 구현 시작 */
+.h-bar {
+	background-color: #404756;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+
+.h-bar .h-logo {
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.h-bar .nav-title {
+	color: white;
+}
+
+.pc-nav {
+	position: fixed;
+	top: 40px;
+}
+
+.pc-nav-wrap {
+	width: 150px;
+	height: calc(100% - 80px);
+}
+
+.pc-nav-wrap ul {
+	padding: 10px 5px; 
+}
+
+.pc-nav-wrap ul li {
+	height: calc(20% - 20px);
+	width: 100%;
+	margin-top: 20px;
+}
+
+.pc-nav-wrap li a {
+	width: 100%;
+	height: 100%;
+}
+
+.pc-nav-wrap li img {
+	width: 40px;
+	margin: 0 auto;
+}
+
+.pc-nav-wrap li p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.pc-nav-wrap ul li:hover img {
+	opacity: 0.5;
+}
+
+.b-bar {
+	width: 100%;
+	height: 40px;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+	position: fixed;
+	bottom: 0;
+}
+
+.b-bar .b-logo {
+	width: 70px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+}
+
+.b-bar .b-logo img {
+	width: 40px;
+}
+
+.b-bar .time {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	box-shadow: var(--site-btn-boxshadow);
+	display: grid;
+	place-items: center;
+	height: 30px;
+	width: 100px;
+	margin: 0 3px;
+}
+
+.bs-icon {
+	width: 150px;
+	height: 30px;
+	box-shadow: var(--site-btn-boxshadow);
+	margin-left: 10px;
+}
+
+.bs-icon img {
+	width: 26px;
+	margin-right: 10px;
+}
+
+.pc-footer .blank {
+	width: 	calc(100% - 500px);
+}
+
+/* 공통부분 구현 끝 */
+
+/* About Me 구현 시작 */
+
+/* 고정 윈도우 배경, 탑 */
+.bs-window {
+	width: calc(100% - 150px);
+	height: 600px;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+}
+
+.bs-window-inner .window-nav {
+	background-color: #404756;
+}
+
+.bs-window-inner h3 {
+	width: calc(100% - 69px);
+	color: white;
+	font-size: 22px;
+}
+
+.bs-window-inner .window-btn {
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+	cursor: pointer;
+}
+
+.bs-window-inner .window-btn h3 {
+	margin-left: 5.5px;
+	margin-bottom: 1px;
+	color: #404756;
+}
+
+/* 윈도우 푸터 */
+.window-footer {
+	width: 100%;
+	height: 50px;
+}
+
+.window-footer img {
+	cursor: pointer;
+}
+
+/* 윈도우 contents */
+.bs-window-inner h1 {
+	font-size: 30px;
+}
+
+/* tap 버튼 */
+.bs-window-inner .bs-tap-container {
+	height: 50px;
+}
+
+.bs-window-inner .bs-tap-container li {
+	font-size: 30px;
+	width: calc(100% / 4);
+	text-align: center;
+	box-shadow: var(--site-boxshadow);
+	cursor: pointer;
+}
+
+.bs-window-inner .bs-tap-container .active {
+	box-shadow: var(--site-btn-boxshadow);
+	color: white;
+	background-color: #404756;
+}
+
+/* tap con */
+.bs-tab-wrap .img-box {
+	border: 1px solid red;
+	height: 100%;
+	box-shadow: var(--site-btn-boxshadow);
+  background: #fcfcfc;
+}
+
+.bs-tab-wrap .bs-info li {
+	display: flex;
+	gap: 0 15px;
+}
+
+.bs-tab-wrap .bs-info li:not(:first-child) {
+	margin-top: 15px;
+}
+
+.bs-tab-wrap .bs-info li p:nth-child(1) {
+	width: 100px;
+}
+
+.bs-tab-wrap .bs-info li p:nth-child(2) {
+	width: calc(100% - 100px);
+	padding: 0 5px;
+	box-shadow: var(--site-btn-boxshadow);
+	background: #fcfcfc;
+}
+
+/* 배너탭 */
+.banner-wrap {
+	height: 100%;
+}
+
+.ban-img {
+	height: 50%;
+	position: relative;
+}
+
+.ban-img img {
+	height: 200px;
+	cursor: pointer;
+}
+
+.ban-img:hover::after {
+	position: absolute;
+	top: 0;
+	background-color: white;
+	z-index: 10;
+	text-align: left;
+	padding: 10px;
+}
+
+.ban-sul:hover::after {
+	content: "설빙 스윗캔디구슬설빙 \A 사용툴: \A Photoshop & Illustraution";
+	white-space: pre;
+	left: 101%;
+}
+
+.ban-acbf:hover::after {
+	content: "ACBF 시즌오프 ~30% 세일\A 사용툴: \A Illustraution";
+	white-space: pre;
+	left: 101%;
+}
+
+.ban-wang:hover::after {
+	content: "왕가탕후루 \A 사용툴: \A After Effect";
+	white-space: pre;
+	right: 101%;
+}
+
+.ban-berry:hover::after {
+	content: "2024 논산딸기축제 \A 사용툴: \A Illustraution & After Effect";
+	white-space: pre;
+	right: 101%;
+}
+
+/* 셋팅 */
+.bs-tab-wrap > div:not(:first-child) {
+	display: none;
+}
+
+.bs-tab-wrap .sns-p-02 {
+	display: none;
+}
+
+/* sns 탭 */
+.sns-wrap img {
+	height: 400px;
+	cursor: pointer;
+}
+
+.sns-p-info {
+	width: calc(100% / 3 - 20px);
+	height: 400px;
+}
+
+.sns-p-info ul {
+	background-color: #fff;
+	padding: 10px;
+}

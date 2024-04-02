@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+/* 기본폰트 */
+html > body {
+	font-family: "DungGeunMo", sans-serif;
+}
+
+/* 공통부분 구현 시작 */
+
+.h-bar {
+	background-color: #404756;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	top: 0;
+}
+
+.h-bar .h-logo {
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.h-bar .nav-title {
+	color: white;
+}
+
+.pc-nav {
+	position: fixed;
+	top: 40px;
+}
+
+.pc-nav-wrap {
+	width: 150px;
+	height: calc(100% - 80px);
+}
+
+.pc-nav-wrap ul {
+	padding: 10px 5px; 
+}
+
+.pc-nav-wrap ul li {
+	height: calc(20% - 20px);
+	width: 100%;
+	margin-top: 20px;
+}
+
+.pc-nav-wrap li a {
+	width: 100%;
+	height: 100%;
+}
+
+.pc-nav-wrap li img {
+	width: 40px;
+	margin: 0 auto;
+}
+
+.pc-nav-wrap li p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.pc-nav-wrap ul li:hover img {
+	opacity: 0.5;
+}
+
+.b-bar {
+	width: 100%;
+	height: 40px;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+	position: fixed;
+	bottom: 0;
+}
+
+.b-bar .b-logo {
+	width: 70px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+}
+
+.b-bar .b-logo img {
+	width: 40px;
+}
+
+.b-bar .time {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	box-shadow: var(--site-btn-boxshadow);
+	display: grid;
+	place-items: center;
+	height: 30px;
+	width: 100px;
+	margin: 0 3px;
+}
+
+.wb-icon {
+	width: 150px;
+	height: 30px;
+	box-shadow: var(--site-btn-boxshadow);
+	margin-left: 10px;
+}
+
+.wb-icon img {
+	width: 26px;
+	margin-right: 10px;
+}
+
+.pc-footer .blank {
+	width: 	calc(100% - 500px);
+}
+
+/* 공통부분 구현 끝 */
+
+/* 웹사이트 구현 시작 */
+
+/* 고정 윈도우 배경, 탑 */
+.wb-window {
+	width: calc(100% - 150px);
+	height: 600px;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+}
+
+.wb-window-inner .window-nav {
+	background-color: #404756;
+}
+
+.wb-window-inner h3 {
+	width: calc(100% - 69px);
+	color: white;
+	font-size: 22px;
+}
+
+.wb-window-inner .window-btn {
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+	cursor: pointer;
+}
+
+.wb-window-inner .window-btn h3 {
+	margin-left: 5.5px;
+	margin-bottom: 1px;
+	color: #404756;
+}
+
+/* 윈도우 푸터 */
+.window-footer {
+	width: 100%;
+	height: 50px;
+}
+
+.window-footer img {
+	cursor: pointer;
+}
+
+/* 윈도우 contents */
+.wb-window-inner h1 {
+	font-size: 30px;
+}
+
+/* tap 버튼 */
+.wb-window-inner .wb-tap-container {
+	height: 50px;
+}
+
+.wb-window-inner .wb-tap-container li {
+	font-size: 30px;
+	width: calc(100% / 4);
+	text-align: center;
+	font-weight: bold;
+	box-shadow: var(--site-boxshadow);
+	cursor: pointer;
+}
+
+.wb-window-inner .wb-tap-container .active {
+	box-shadow: var(--site-btn-boxshadow);
+	color: white;
+	background-color: #404756;
+}
+
+/* tap con */
+.wb-tab-wrap .img-box {
+	height: 100%;
+	box-shadow: var(--site-btn-boxshadow);
+  background: #fcfcfc;
+}
+
+.wb-tab-wrap .wb-info li {
+	display: flex;
+	gap: 0 15px;
+}
+
+.wb-tab-wrap .wb-info li:not(:first-child) {
+	margin-top: 15px;
+}
+
+.wb-tab-wrap .wb-info li p:nth-child(1) {
+	width: 100px;
+}
+
+.wb-tab-wrap .wb-info li p:nth-child(2) {
+	width: calc(100% - 100px);
+	padding: 0 5px;
+	box-shadow: var(--site-btn-boxshadow);
+	background: #fcfcfc;
+}
+
+.wb-tab-wrap .link-list li {
+	background-color: #404756;
+	padding: 0 20px;
+	color: white;
+	height: 35px;
+	border-radius: 17px;
+	cursor: pointer;
+}
+
+.wb-tab-wrap .link-list li:hover {
+	opacity: 0.5;
+}
+
+.wb-tab-wrap .link-list a {
+	margin: 0 auto;
+	line-height: 35px;
+	height: 100%;
+	cursor: pointer;
+}
+
+/* 셋팅 */
+.wb-tab-wrap > div:not(:first-child) {
+	display: none;
+}
+
+/* 링크 */
+.link-list a {
+	display: block;
+}

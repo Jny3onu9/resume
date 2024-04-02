@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 스와이퍼 라이브러리 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 테일윈드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+    <!-- common -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- banner sns css -->
+    <link rel="stylesheet" href="css/bannersns.css">
+
+    <!-- JS -->
+    <!-- time -->
+    <script defer src="js/time.js"></script>
+    <!-- banner sns js -->
+    <script defer src="js/bannersns.js"></script>
+</head>
+<body>
+    <!-- 공통 -->
+    <header class="main-header">
+        <div class="h-bar flex items-center">
+            <div class="h-logo ml-[10px] mr-[10px]">
+                <img src="https://ifh.cc/g/FakVbo.png" alt="로고">
+            </div>
+            <div class="nav-title">
+                Young's Portfolio
+            </div>
+        </div>
+    </header>
+
+    <nav class="pc-nav">
+        <div class="mx-auto">
+            <div class="pc-nav-wrap">
+                <ul class="mx-auto">
+                    <li>
+                        <a href="main.html">
+                            <img src="https://ifh.cc/g/hK19rD.png" alt="내 정보 아이콘">
+                            <p>About Me</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="website.html">
+                            <img src="https://ifh.cc/g/py9TGa.png" alt="웹사이트 아이콘">
+                            <p>Website</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bannersns.html">
+                            <img src="https://ifh.cc/g/qbb3sx.png" alt="배너 SNS 아이콘">
+                            <p>Banner&SNS</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detailpage.html">
+                            <img src="https://ifh.cc/g/FghqGO.png" alt="상세페이지 아이콘">
+                            <p>Detail Page</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cardnews.html">
+                            <img src="https://ifh.cc/g/dpjxmx.png" alt="카드뉴스 아이콘">
+                            <p>Card News</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="porfol.html">
+                            <img src="https://ifh.cc/g/waaxKo.png" alt="ect 아이콘">
+                            <p>Ect. Porfol</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contect.html">
+                            <img src="https://ifh.cc/g/jGj37j.png" alt="컨택트 아이콘">
+                            <p>Contect Me</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <footer class="pc-footer">
+        <div class="b-bar flex items-center">
+            <div class="b-logo ml-[10px] mr-[10px]">
+                <img src="https://ifh.cc/g/FakVbo.png" alt="로고">
+            </div>
+            <div class="nav-title">
+                Young's Portfolio
+            </div>
+            <div class="bs-icon flex items-center justify-center">
+                <img src="https://ifh.cc/g/qbb3sx.png" alt="배너 SNS 아이콘">
+                <p>Banner & SNS</p>
+            </div>
+            <div class="blank"></div>
+            <div class="time">
+                <time class="clock">오후 2:21</time>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Banner & SNS -->
+    <section class="bannersns">
+        <div class="con mx-auto">
+            <div class="bs-window mx-auto mt-[70px] p-[6px]">
+                <div class="bs-window-inner">
+                    <div class="window-nav flex items-center justify-between h-[30px] px-[5px]">
+                        <h3 class="flex items-center justify-start">Banner & SNS</h3>
+                        <div class="window-btn flex items-center w-[24px] h-[22px]">
+                            <h3>♥</h3>
+                        </div>
+                    </div>
+                    <div class="window-con p-[20px]">
+                        <ul class="bs-tap-container flex w-1/2">
+                            <li class="tab active" onclick="showTab('tab01', this)">Banner</li>
+                            <li class="tab" onclick="showTab('tab02', this)">SNS</li>
+                        </ul>
+                        <div class="bs-tab-wrap mt-[20px]">
+                            <div id="tab01" class="tab-content w-full">
+                                <div class="banner-wrap flex justify-between">
+                                    <ul> <!-- 이미지 배너 -->
+                                        <li class="ban-img ban-sul">
+                                            <img src="https://ifh.cc/g/JvNt6P.jpg" alt="설빙 스윗캔디구슬설빙" onclick="window.open(this.src)">
+                                            </li>
+                                        <li class="ban-img ban-acbf mt-[20px]">
+                                            <img src="https://ifh.cc/g/DOW5Da.png" alt="ACBF 시즌오프 세일 ~30%" onclick="window.open(this.src)">
+                                            </li>
+                                    </ul>
+                                    <ul> <!-- 영상 배너 -->
+                                        <li class="ban-img ban-wang">
+                                            <iframe width="500" height="200" src="https://www.youtube.com/embed/M7EimmOc3cg?si=X3rTsJ9fLYt4rUJp&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </li>
+                                        <li class="ban-img mt-[20px] ban-berry">
+                                            <iframe width="500" height="200" src="https://www.youtube.com/embed/MGkA55OFXJc?si=N87xg2HekU82dnDd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="tab02" class="tab-content w-full">
+                                <div class="sns-wrap h-full">
+                                    <div class="sns-p-01">
+                                        <ul class="flex justify-between gap-x-[10px]">
+                                            <li>
+                                                <img src="https://ifh.cc/g/tcvMlC.jpg" alt="안산 정신건강복지센터 키오스크" onclick="window.open(this.src)">
+                                            </li>
+                                            <li class="sns-p-info flex flex-col gap-y-[213px]">
+                                                <ul>
+                                                    <li>
+                                                        안산시 정신건강복지센터 키오스크
+                                                    </li>
+                                                    <li>
+                                                        사용툴:
+                                                        <br>
+                                                        Photoshop & Illustration
+                                                    </li>
+                                                </ul>
+                                                <ul class="text-right">
+                                                    <li>
+                                                        성원 아이북랜드
+                                                    </li>
+                                                    <li>
+                                                        사용툴:
+                                                        <br>
+                                                        Photoshop & Illustration
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <img src="https://ifh.cc/g/dtGtFY.png" alt="성원 아이북랜드" onclick="window.open(this.src)">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sns-p-02">
+                                        <ul class="flex justify-between">
+                                            <li>
+                                                <img src="https://ifh.cc/g/q9rmwf.png" alt="2023 소설 보다 시리즈" onclick="window.open(this.src)">
+                                            </li>
+                                            <li class="sns-p-info flex flex-col gap-y-[213px]">
+                                                <ul>
+                                                    <li>
+                                                        2023 소설 보다 - 봄, 여름, 가을, 겨울
+                                                    </li>
+                                                    <li>
+                                                        사용툴:
+                                                        <br>
+                                                        Photoshop & Illustration
+                                                    </li>
+                                                </ul>
+                                                <ul class="text-right">
+                                                    <li>
+                                                        망고아이 - 화상수업
+                                                    </li>
+                                                    <li>
+                                                        사용툴:
+                                                        <br>
+                                                        Photoshop & Illustration
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <img src="https://ifh.cc/g/Jbz1d1.jpg" alt="망고아이 화상수업" onclick="window.open(this.src)">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sns-footer flex items-center justify-center gap-x-[20px] px-[20px]">
+                                    <div class="prev-btn">
+                                        <a href="#none">
+                                            <img src="https://ifh.cc/g/aMFS8f.png" alt="prev">
+                                        </a>
+                                    </div>
+                                    <div class="next-btn">
+                                        <a href="#none">
+                                            <img src="https://ifh.cc/g/75PdtV.png" alt="next">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

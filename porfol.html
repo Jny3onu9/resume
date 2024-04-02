@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 스와이퍼 라이브러리 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- 테일윈드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+    <!-- common -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- porfol css -->
+    <link rel="stylesheet" href="css/porfol.css">
+
+    <!-- JS -->
+    <!-- time -->
+    <script defer src="js/time.js"></script>
+    <!-- porfol js -->
+    <script defer src="js/porfol.js"></script>
+</head>
+<body>
+    <!-- 공통 -->
+    <header class="main-header">
+        <div class="h-bar flex items-center">
+            <div class="h-logo ml-[10px] mr-[10px]">
+                <img src="https://ifh.cc/g/FakVbo.png" alt="로고">
+            </div>
+            <div class="nav-title">
+                Young's Portfolio
+            </div>
+        </div>
+    </header>
+
+    <nav class="pc-nav">
+        <div class="mx-auto">
+            <div class="pc-nav-wrap">
+                <ul class="mx-auto">
+                    <li>
+                        <a href="main.html">
+                            <img src="https://ifh.cc/g/hK19rD.png" alt="내 정보 아이콘">
+                            <p>About Me</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="website.html">
+                            <img src="https://ifh.cc/g/py9TGa.png" alt="웹사이트 아이콘">
+                            <p>Website</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bannersns.html">
+                            <img src="https://ifh.cc/g/qbb3sx.png" alt="배너 SNS 아이콘">
+                            <p>Banner&SNS</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detailpage.html">
+                            <img src="https://ifh.cc/g/FghqGO.png" alt="상세페이지 아이콘">
+                            <p>Detail Page</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cardnews.html">
+                            <img src="https://ifh.cc/g/dpjxmx.png" alt="카드뉴스 아이콘">
+                            <p>Card News</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="porfol.html">
+                            <img src="https://ifh.cc/g/waaxKo.png" alt="ect 아이콘">
+                            <p>Ect. Porfol</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contect.html">
+                            <img src="https://ifh.cc/g/jGj37j.png" alt="컨택트 아이콘">
+                            <p>Contect Me</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <footer class="pc-footer">
+        <div class="b-bar flex items-center">
+            <div class="b-logo ml-[10px] mr-[10px]">
+                <img src="https://ifh.cc/g/FakVbo.png" alt="로고">
+            </div>
+            <div class="nav-title">
+                Young's Portfolio
+            </div>
+            <div class="bs-icon flex items-center justify-center">
+                <img src="https://ifh.cc/g/waaxKo.png" alt="ect 아이콘">
+                <p>Ect. Porfol</p>
+            </div>
+            <div class="blank"></div>
+            <div class="time">
+                <time class="clock">오후 2:21</time>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Banner & SNS -->
+    <section class="ectportfolio">
+        <div class="con mx-auto">
+            <div class="ep-window mx-auto mt-[70px] p-[6px]">
+                <div class="ep-window-inner">
+                    <div class="window-nav flex items-center justify-between h-[30px] px-[5px]">
+                        <h3 class="flex items-center justify-start">Ect Portfolio</h3>
+                        <div class="window-btn flex items-center w-[24px] h-[22px]">
+                            <h3>♥</h3>
+                        </div>
+                    </div>
+                    <div class="window-con p-[20px]">
+                        <ul class="ep-tap-container flex w-1/2">
+                            <li class="tab active" onclick="showTab('tab01', this)">LOGO</li>
+                            <li class="tab" onclick="showTab('tab02', this)">Poster</li>
+                        </ul>
+                        <div class="ep-tab-wrap mt-[20px]">
+                            <div id="tab01" class="tab-content w-full">
+                                <div class="logo-wrap flex justify-between">
+                                    <ul>
+                                        <li class="logo-img flex">
+                                            <ul class="logo-pak flex gap-x-[10px]">
+                                                <li>
+                                                    <img src="https://ifh.cc/g/3XfKjB.jpg" alt="소다펄베리 로고">
+                                                </li>
+                                                <li>
+                                                    <img src="https://ifh.cc/g/HFpJF6.jpg" alt="소다펄베리 상자">
+                                                </li>
+                                                <li>
+                                                    <img src="https://ifh.cc/g/hwaMsJ.jpg" alt="소다펄베리 종이봉투">
+                                                </li>
+                                            </ul>
+                                            <ul class="soda-info w-1/5">
+                                                <li>
+                                                    <p>브랜드명: 소다펄베리</p>
+                                                </li>
+                                                <li>
+                                                    <p>브랜드 간략 소개: 핸드메이드 악세서리 쇼핑몰</p>
+                                                </li>
+                                                <li>
+                                                    <p>로고 타입: 심볼, 시그니처</p>
+                                                </li>
+                                                <li class="info-gonow">
+                                                    <a href="subpage/pf_01.html"><p>로고 가이드 보러가기</p></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="logo-img mt-[20px] flex">
+                                            <ul class="cap-pak flex gap-x-[10px]">
+                                                <li>
+                                                    <img src="https://ifh.cc/g/nM9Ppn.jpg" alt="캐피탈 여행사 로고">
+                                                </li>
+                                                <li>
+                                                    <img src="https://ifh.cc/g/PSJljc.jpg" alt="캐피탈 여행사 명함">
+                                                </li>
+                                                <li>
+                                                    <img src="https://ifh.cc/g/OYhv0A.jpg" alt="캐피탈 여행사 쇼핑백">
+                                                </li>
+                                            </ul>
+                                            <ul class="cap-info w-1/5">
+                                                <li>
+                                                    <p>브랜드명: 캐피탈 여행사</p>
+                                                </li>
+                                                <li>
+                                                    <p>브랜드 간략 소개: 여행사</p>
+                                                </li>
+                                                <li>
+                                                    <p>로고 타입: 시그니처</p>
+                                                </li>
+                                                <li class="info-gonow">
+                                                    <a href="subpage/pf_02.html"><p>로고 가이드 보러가기</p></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="tab02" class="tab-content w-full">
+                                <div class="pos-wrap h-full">
+                                    <ul class="flex gap-x-[70px]">
+                                        <li class="pos-img">
+                                            <img src="https://ifh.cc/g/lynG80.jpg" alt="위픽 포스터">
+                                            <a href="subpage/pf_03.html" class="info-gonow"><p>위픽 포스터 보러가기</p></a>
+                                        </li>
+                                        <li class="pos-img">
+                                            <img src="https://ifh.cc/g/aj7Dmc.jpg" alt="전기가오리 포스터">
+                                            <a href="subpage/pf_04.html" class="info-gonow"><p>전기가오리 포스터 보러가기</p></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

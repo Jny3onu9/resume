@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 스와이퍼 라이브러리 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 테일윈드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+    <!-- common -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- detail page css -->
+    <link rel="stylesheet" href="css/detailpage.css">
+
+    <!-- JS -->
+    <!-- time -->
+    <script defer src="js/time.js"></script>
+    <!-- detail page js -->
+    <script defer src="js/detailpage.js"></script>
+</head>
+<body>
+    <!-- 공통 -->
+    <header class="main-header">
+        <div class="h-bar flex items-center">
+            <div class="h-logo ml-[10px] mr-[10px]">
+                <img src="https://ifh.cc/g/FakVbo.png" alt="로고">
+            </div>
+            <div class="nav-title">
+                Young's Portfolio
+            </div>
+        </div>
+    </header>
+
+    <nav class="pc-nav">
+        <div class="mx-auto">
+            <div class="pc-nav-wrap">
+                <ul class="mx-auto">
+                    <li>
+                        <a href="main.html">
+                            <img src="https://ifh.cc/g/hK19rD.png" alt="내 정보 아이콘">
+                            <p>About Me</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="website.html">
+                            <img src="https://ifh.cc/g/py9TGa.png" alt="웹사이트 아이콘">
+                            <p>Website</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bannersns.html">
+                            <img src="https://ifh.cc/g/qbb3sx.png" alt="배너 SNS 아이콘">
+                            <p>Banner&SNS</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detailpage.html">
+                            <img src="https://ifh.cc/g/FghqGO.png" alt="상세페이지 아이콘">
+                            <p>Detail Page</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cardnews.html">
+                            <img src="https://ifh.cc/g/dpjxmx.png" alt="카드뉴스 아이콘">
+                            <p>Card News</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="porfol.html">
+                            <img src="https://ifh.cc/g/waaxKo.png" alt="ect 아이콘">
+                            <p>Ect. Porfol</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contect.html">
+                            <img src="https://ifh.cc/g/jGj37j.png" alt="컨택트 아이콘">
+                            <p>Contect Me</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <footer class="pc-footer">
+        <div class="b-bar flex items-center">
+            <div class="b-logo ml-[10px] mr-[10px]">
+                <img src="https://ifh.cc/g/FakVbo.png" alt="로고">
+            </div>
+            <div class="nav-title">
+                Young's Portfolio
+            </div>
+            <div class="bs-icon flex items-center justify-center">
+                <img src="https://ifh.cc/g/FghqGO.png" alt="상세페이지 아이콘">
+                <p>Detail Page</p>
+            </div>
+            <div class="blank"></div>
+            <div class="time">
+                <time class="clock">오후 2:21</time>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Detail Page -->
+    <section class="detailpage">
+        <div class="con mx-auto">
+            <div class="dp-window mx-auto mt-[70px] p-[6px]">
+                <div class="dp-window-inner">
+                    <div class="window-nav flex items-center justify-between h-[30px] px-[5px]">
+                        <h3 class="flex items-center justify-start">Detail Page</h3>
+                        <div class="window-btn flex items-center w-[24px] h-[22px]">
+                            <h3>♥</h3>
+                        </div>
+                    </div>
+                    <div class="window-con p-[20px]">
+                            <div class="dp-wrap">
+                                <ul class="flex gap-x-[30px]">
+                                    <li>
+                                        <img src="https://ifh.cc/g/4HNYcc.png" alt="오늘꽃송 상세페이지">
+                                        <div class="p-[10px]">
+                                            <p class="info-title">오늘꽃송</p>
+                                            <p class="info-tool">
+                                                사용툴: Photoshop, Illustration
+                                            </p>
+                                            <p class="info-card">
+                                                기획의도:
+                                                <br>
+                                                꽃다발 구독제 상품인 오늘꽃송이라는 가상의 상품을 만듦
+                                            </p>
+                                            <div class="info-gonow">
+                                                <a href="subpage/dp_01.html">보러가기</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="https://ifh.cc/g/8aNa2T.png" alt="망고젤리 상세페이지">
+                                        <div class="p-[10px]">
+                                            <p class="info-title">쫀득말랑 망고젤리</p>
+                                            <p class="info-tool">
+                                                사용툴: Photoshop, Illustration
+                                            </p>
+                                            <p class="info-card">
+                                                기획의도:
+                                                <br>
+                                                개인적으로 구매했던 망고젤리의 상세페이지를 리디자인
+                                            </p>
+                                            <div class="info-gonow">
+                                                <a href="subpage/dp_02.html">보러가기</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="https://ifh.cc/g/l4oMlh.png" alt="너리싱 샴푸&컨디셔너 상세페이지">
+                                        <div class="p-[10px]">
+                                            <p class="info-title">너리싱 샴푸&컨디셔너</p>
+                                            <p class="info-tool">
+                                                사용툴: Photoshop, Illustration
+                                            </p>
+                                            <p class="info-card">
+                                                기획의도:
+                                                <br>
+                                                너리싱 샴푸&컨디셔너의 상세페이지 리디자인
+                                            </p>
+                                            <div class="info-gonow">
+                                                <a href="subpage/dp_03.html">보러가기</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="https://ifh.cc/g/Q4kyoq.jpg" alt="동남아 크루즈 상세페이지">
+                                        <div class="p-[10px]">
+                                            <p class="info-title">동남아 크루즈</p>
+                                            <p class="info-tool">
+                                                사용툴: Photoshop, Illustration
+                                            </p>
+                                            <p class="info-card">
+                                                기획의도:
+                                                <br>
+                                                실제 있는 여행 상품과 실제 여행사들로 가상의 구성 상품 제작
+                                            </p>
+                                            <div class="info-gonow">
+                                                <a href="subpage/dp_04.html">보러가기</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

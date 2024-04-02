@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/* 기본폰트 */
+html > body {
+	font-family: "DungGeunMo", sans-serif;
+}
+
+/* 공통부분 구현 시작 */
+
+.h-bar {
+	background-color: #404756;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+
+.h-bar .h-logo {
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.h-bar .nav-title {
+	color: white;
+}
+
+.pc-nav {
+	position: fixed;
+	top: 40px;
+}
+
+.pc-nav-wrap {
+	width: 150px;
+	height: calc(100% - 80px);
+}
+
+.pc-nav-wrap ul {
+	padding: 10px 5px; 
+}
+
+.pc-nav-wrap ul li {
+	height: calc(20% - 20px);
+	width: 100%;
+	margin-top: 20px;
+}
+
+.pc-nav-wrap li a {
+	width: 100%;
+	height: 100%;
+}
+
+.pc-nav-wrap li img {
+	width: 40px;
+	margin: 0 auto;
+}
+
+.pc-nav-wrap li p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.pc-nav-wrap ul li:hover img {
+	opacity: 0.5;
+}
+
+.b-bar {
+	width: 100%;
+	height: 40px;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+	position: fixed;
+	bottom: 0;
+}
+
+.b-bar .b-logo {
+	width: 70px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+}
+
+.b-bar .b-logo img {
+	width: 40px;
+}
+
+.b-bar .time {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	box-shadow: var(--site-btn-boxshadow);
+	display: grid;
+	place-items: center;
+	height: 30px;
+	width: 100px;
+	margin: 0 3px;
+}
+
+.bs-icon {
+	width: 150px;
+	height: 30px;
+	box-shadow: var(--site-btn-boxshadow);
+	margin-left: 10px;
+}
+
+.bs-icon img {
+	width: 26px;
+	margin-right: 10px;
+}
+
+.pc-footer .blank {
+	width: 	calc(100% - 500px);
+}
+
+/* 공통부분 구현 끝 */
+
+/* About Me 구현 시작 */
+
+/* 고정 윈도우 배경, 탑 */
+.ep-window {
+	width: calc(100% - 150px);
+	height: 600px;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+}
+
+.ep-window-inner .window-nav {
+	background-color: #404756;
+}
+
+.ep-window-inner h3 {
+	width: calc(100% - 69px);
+	color: white;
+	font-size: 22px;
+}
+
+.ep-window-inner .window-btn {
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+	cursor: pointer;
+}
+
+.ep-window-inner .window-btn h3 {
+	margin-left: 5.5px;
+	margin-bottom: 1px;
+	color: #404756;
+}
+
+/* 윈도우 푸터 */
+.window-footer {
+	width: 100%;
+	height: 50px;
+}
+
+.window-footer img {
+	cursor: pointer;
+}
+
+/* 윈도우 contents */
+.ep-window-inner h1 {
+	font-size: 30px;
+}
+
+/* tap 버튼 */
+.ep-window-inner .ep-tap-container {
+	height: 50px;
+}
+
+.ep-window-inner .ep-tap-container li {
+	font-size: 30px;
+	width: calc(100% / 4);
+	text-align: center;
+	box-shadow: var(--site-boxshadow);
+	cursor: pointer;
+}
+
+.ep-window-inner .ep-tap-container .active {
+	box-shadow: var(--site-btn-boxshadow);
+	color: white;
+	background-color: #404756;
+}
+
+/* tap con */
+.ep-tab-wrap .img-box {
+	border: 1px solid red;
+	height: 100%;
+	box-shadow: var(--site-btn-boxshadow);
+  background: #fcfcfc;
+}
+
+.ep-tab-wrap .ep-info li {
+	display: flex;
+	gap: 0 15px;
+}
+
+.ep-tab-wrap .ep-info li:not(:first-child) {
+	margin-top: 15px;
+}
+
+.ep-tab-wrap .ep-info li p:nth-child(1) {
+	width: 100px;
+}
+
+.ep-tab-wrap .ep-info li p:nth-child(2) {
+	width: calc(100% - 100px);
+	padding: 0 5px;
+	box-shadow: var(--site-btn-boxshadow);
+	background: #fcfcfc;
+}
+
+/* 로고탭 */
+.logo-wrap {
+	height: 100%;
+	width: 100%;
+}
+
+.logo-img {
+	width: 100%;
+	height: 200px;
+}
+
+.logo-img img {
+	height: 200px;
+	cursor: pointer;
+}
+
+.logo-img .logo-pak li, .logo-img .cap-pak li {
+	width: 300px;
+}
+
+.soda-info li:not(:first-child), .cap-info li:not(:first-child) {
+	margin-top: 10px;
+}
+
+/* 셋팅 */
+.ep-tab-wrap > div:not(:first-child) {
+	display: none;
+}
+
+.ep-tab-wrap .sns-p-02 {
+	display: none;
+}
+
+/* sns 탭 */
+.pos-wrap {
+	height: 100%;
+	width: 100%;
+}
+
+.pos-wrap img {
+	height: 400px;
+	cursor: pointer;
+}
+
+.pos-wrap .pos-img {
+	width: 100%;
+	height: 100%;
+}
+
+.pos-wrap .pos-img a {
+	display: block;
+	width: 80%;
+}
+
+/* 보러가기 */
+.info-gonow {
+	margin-top: 10px;
+	background-color: #404756;
+	padding: 10px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.info-gonow p {
+	color: white;
+}
+
+@keyframes blink-effect {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.info-gonow:hover {
+	animation: blink-effect 0.5s step-end infinite;
+}
+
+.soda-info li:not(:last-child), .cap-info li:not(:last-child) {
+	box-shadow: var(--site-btn-boxshadow);
+	background: #fcfcfc;
+	padding-left: 10px;
+}
+
+.cap-info .info-gonow a {
+	display: block;
+}
+
+.pos-wrap .info-gonow {
+	display: block;
+}
+
+.pos-wrap .info-gonow {
+	margin: 10px auto 0;
+}

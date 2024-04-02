@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 스와이퍼 라이브러리 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- 테일윈드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+    <!-- common -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- card news css -->
+    <link rel="stylesheet" href="css/cardnews.css">
+
+    <!-- JS -->
+    <!-- time -->
+    <script defer src="js/time.js"></script>
+    <!-- card news js -->
+    <script defer src="js/cardnews.js"></script>
+</head>
+<body>
+    <!-- 공통 -->
+    <header class="main-header">
+        <div class="h-bar flex items-center">
+            <div class="h-logo ml-[10px] mr-[10px]">
+                <img src="https://ifh.cc/g/FakVbo.png" alt="로고">
+            </div>
+            <div class="nav-title">
+                Young's Portfolio
+            </div>
+        </div>
+    </header>
+
+    <nav class="pc-nav">
+        <div class="mx-auto">
+            <div class="pc-nav-wrap">
+                <ul class="mx-auto">
+                    <li>
+                        <a href="main.html">
+                            <img src="https://ifh.cc/g/hK19rD.png" alt="내 정보 아이콘">
+                            <p>About Me</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="website.html">
+                            <img src="https://ifh.cc/g/py9TGa.png" alt="웹사이트 아이콘">
+                            <p>Website</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bannersns.html">
+                            <img src="https://ifh.cc/g/qbb3sx.png" alt="배너 SNS 아이콘">
+                            <p>Banner&SNS</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detailpage.html">
+                            <img src="https://ifh.cc/g/FghqGO.png" alt="상세페이지 아이콘">
+                            <p>Detail Page</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cardnews.html">
+                            <img src="https://ifh.cc/g/dpjxmx.png" alt="카드뉴스 아이콘">
+                            <p>Card News</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="porfol.html">
+                            <img src="https://ifh.cc/g/waaxKo.png" alt="ect 아이콘">
+                            <p>Ect. Porfol</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contect.html">
+                            <img src="https://ifh.cc/g/jGj37j.png" alt="컨택트 아이콘">
+                            <p>Contect Me</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <footer class="pc-footer">
+        <div class="b-bar flex items-center">
+            <div class="b-logo ml-[10px] mr-[10px]">
+                <img src="https://ifh.cc/g/FakVbo.png" alt="로고">
+            </div>
+            <div class="nav-title">
+                Young's Portfolio
+            </div>
+            <div class="bs-icon flex items-center justify-center">
+                <img src="https://ifh.cc/g/dpjxmx.png" alt="카드뉴스 아이콘">
+                <p>Card News</p>
+            </div>
+            <div class="blank"></div>
+            <div class="time">
+                <time class="clock">오후 2:21</time>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Card News -->
+    <section class="cardnews">
+        <div class="con mx-auto">
+            <div class="cn-window mx-auto mt-[70px] p-[6px]">
+                <div class="cn-window-inner">
+                    <div class="window-nav flex items-center justify-between h-[30px] px-[5px]">
+                        <h3 class="flex items-center justify-start">Card News</h3>
+                        <div class="window-btn flex items-center w-[24px] h-[22px]">
+                            <h3>♥</h3>
+                        </div>
+                    </div>
+                    <div class="window-con p-[20px]">
+                            <div class="cn-wrap">
+                                <ul class="flex gap-x-[30px]">
+                                    <li>
+                                        <img src="https://ifh.cc/g/JJ8D1h.jpg" alt="간헐적채식 카드뉴스">
+                                        <div class="p-[10px]">
+                                            <p class="info-title">간헐적 채식</p>
+                                            <p class="info-tool">
+                                                사용툴: Photoshop
+                                                <br>
+                                                &nbsp;
+                                            </p>
+                                            <p class="info-card">
+                                                기획의도:
+                                                <br>
+                                                간헐적 채식에 대한 중요성을 알리고, 간헐적 채식 권유
+                                            </p>
+                                            <div class="info-gonow">
+                                                <a href="subpage/cn_01.html">보러가기</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="https://ifh.cc/g/xw4Zjh.jpg" alt="동묘 이곳저곳">
+                                        <div class="p-[10px]">
+                                            <p class="info-title">동묘 이곳저곳</p>
+                                            <p class="info-tool">
+                                                사용툴: Photoshop, Illustration
+                                            </p>
+                                            <p class="info-card">
+                                                기획의도:
+                                                <br>
+                                                레트로 열풍인 요즘, 구제 시장으로 유명한 동묘에 대한 소개
+                                            </p>
+                                            <div class="info-gonow">
+                                                <a href="subpage/cn_02.html">보러가기</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="https://ifh.cc/g/dLflcK.jpg" alt="젋은작가상 수상작품집">
+                                        <div class="p-[10px]">
+                                            <p class="info-title">젊은작가상 수상작품집</p>
+                                            <p class="info-tool">
+                                                사용툴: Photoshop, Illustration
+                                            </p>
+                                            <p class="info-card">
+                                                기획의도:
+                                                <br>
+                                                출간된 한 해에만 만 원에 파는 수상작품집 홍보와 책 읽기 권유
+                                            </p>
+                                            <div class="info-gonow">
+                                                <a href="subpage/cn_03.html">보러가기</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="https://ifh.cc/g/wRnWKv.jpg" alt="인터넷 술 구매">
+                                        <div class="p-[10px]">
+                                            <p class="info-title">인터넷 술 구매 금지</p>
+                                            <p class="info-tool">
+                                                사용툴: Photoshop, Illustration
+                                            </p>
+                                            <p class="info-card">
+                                                기획의도:
+                                                <br>
+                                                인터넷으로 술 구매를 못 하는 이유에 관한 설명
+                                            </p>
+                                            <div class="info-gonow">
+                                                <a href="subpage/cn_04.html">보러가기</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,314 @@
+@charset "utf-8";
+
+/* 기본폰트 */
+html > body {
+	font-family: "DungGeunMo", sans-serif;
+}
+
+/* 공통부분 구현 시작 */
+.h-bar {
+	background-color: #404756;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	top: 0;
+}
+
+.h-bar .h-logo {
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.h-bar .nav-title {
+	color: white;
+}
+
+.pc-nav {
+	position: fixed;
+	top: 40px;
+}
+
+.pc-nav-wrap {
+	width: 150px;
+	height: calc(100% - 80px);
+}
+
+.pc-nav-wrap ul {
+	padding: 10px 5px; 
+}
+
+.pc-nav-wrap ul li {
+	height: calc(20% - 20px);
+	width: 100%;
+	margin-top: 20px;
+}
+
+.pc-nav-wrap li a {
+	width: 100%;
+	height: 100%;
+}
+
+.pc-nav-wrap li img {
+	width: 40px;
+	margin: 0 auto;
+}
+
+.pc-nav-wrap li p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.pc-nav-wrap ul li:hover img {
+	opacity: 0.5;
+}
+
+.b-bar {
+	width: 100%;
+	height: 40px;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+	position: fixed;
+	bottom: 0;
+}
+
+.b-bar .b-logo {
+	width: 70px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+}
+
+.b-bar .b-logo img {
+	width: 40px;
+}
+
+.b-bar .time {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	box-shadow: var(--site-btn-boxshadow);
+	display: grid;
+	place-items: center;
+	height: 30px;
+	width: 100px;
+	margin: 0 3px;
+}
+
+.abm-icon {
+	width: 150px;
+	height: 30px;
+	box-shadow: var(--site-btn-boxshadow);
+	margin-left: 10px;
+}
+
+.abm-icon img {
+	width: 26px;
+	margin-right: 10px;
+}
+
+.pc-footer .blank {
+	width: 	calc(100% - 500px);
+}
+
+/* 공통부분 구현 끝 */
+
+/* About Me 구현 시작 */
+
+/* 고정 윈도우 배경, 탑 */
+.abm-window {
+	width: calc(100% - 150px);
+	height: 600px;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+}
+
+.abm-window-inner .window-nav {
+	background-color: #404756;
+}
+
+.abm-window-inner h3 {
+	width: calc(100% - 69px);
+	color: white;
+	font-size: 22px;
+}
+
+.abm-window-inner .window-btn {
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+	cursor: pointer;
+}
+
+.abm-window-inner .window-btn h3 {
+	margin-left: 5.5px;
+	margin-bottom: 1px;
+	color: #404756;
+}
+
+/* 윈도우 contents */
+.abm-window-inner h1 {
+	font-size: 30px;
+}
+
+/* info 페이지 구현 */
+.abm-window-inner .right-sec, .abm-window-inner .center-sec, .abm-window-inner .left-sec {
+	width: calc(100% / 3);
+}
+
+.abm-window-inner .info-wrap {
+	height: 470px;
+}
+
+/* 왼쪽 구역 */
+.abm-window-inner .left-sec-1 {
+	box-shadow: var(--site-btn-boxshadow);
+	background: #fcfcfc;
+	padding: 10px;
+}
+
+.abm-window-inner .left-sec-1 p {
+	font-family: "Noto Sans KR", sans-serif;
+	margin-top: 5px;
+}
+
+.abm-window-inner .left-sec-2 li {
+	display: flex;
+	gap: 0 15px;
+}
+
+.abm-window-inner .left-sec-2 li:not(:first-child) {
+	margin-top: 7px;
+}
+
+.abm-window-inner .left-sec-2 li p:nth-child(1) {
+	width: 80px;
+}
+
+.abm-window-inner .left-sec-2 li p:nth-child(2) {
+	width: calc(100% - 80px - 15px - 10px);
+	padding: 0 5px;
+	box-shadow: var(--site-btn-boxshadow);
+	background: #fcfcfc;
+}
+
+/* 가운데 구역 */
+.abm-window-inner .center-sec {
+	border: 1px solid blue;
+}
+
+/* 오른쪽 구역 */
+.abm-window-inner .right-sec-1 li {
+	display: flex;
+	gap: 0 15px;
+}
+
+.abm-window-inner .right-sec-1 li:not(:first-child) {
+	margin-top: 5px;
+}
+
+.abm-window-inner .right-sec-1 li p:nth-child(1) {
+	width: 40px;
+	margin-left: 20px;
+}
+
+.abm-window-inner .right-sec-1 li p:nth-child(2) {
+	width: calc(100% - 75px);
+	padding: 0 5px;
+	box-shadow: var(--site-btn-boxshadow);
+	background: #fcfcfc;
+}
+
+.abm-window-inner .right-sec-1 li b {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.abm-window-inner .right-sec-2 p {
+	width: 100%;
+	padding: 0 5px;
+	box-shadow: var(--site-btn-boxshadow);
+	background: #fcfcfc;
+}
+/* info 페이지 구현 끝 */
+
+/* 윈도우 푸터 */
+.window-footer {
+	width: 100%;
+	height: 50px;
+}
+
+.window-footer img {
+	cursor: pointer;
+}
+
+/* 스킬 페이지 구현 */
+.window-con .skill-wrap {
+	display: none;
+}
+
+.abm-window-inner .skill-wrap {
+	height: 470px;
+}
+
+.sk-title h1 {
+	width: 150px;
+}
+
+.sk-title h3 {
+	margin-top: 5px;
+}
+
+.sk-box .sk-list {
+	height: calc(100% / 3);
+	width: 100%;
+	display: flex;
+	gap: 0 20px;
+	margin-top: 20px;
+}
+
+.sk-box .sk-list li {
+	width: 25%;
+	text-align: center;
+	height: 100%;
+}
+
+.sk-box .sk-list li p {
+	font-size: 22px;
+}
+
+.sk-box .sk-list li img {
+	width: 35%;
+	margin: 0 auto;
+}
+
+.sk-box .licence {
+	position: relative;
+}
+
+.sk-box .licence:hover img {
+	opacity: 0.5;
+}
+
+.sk-box .licence:hover::after {
+	position: absolute;
+	top: 0;
+	left: 70%;
+	opacity: 1;
+	background-color: white;
+	z-index: 10;
+	text-align: left;
+}
+
+.sk-box .licence-1:hover::after {
+	content: "1. GTQ그래픽기술자격 1급 (2023. 5. 12) \A 2. Visual Design using Adobe Photoshop 2020 (2023. 7. 29)";
+	white-space: pre;
+}
+
+.sk-box .licence-2:hover::after {
+	content: "1. GTQ일러스트 1급 (2023. 10. 13) \A 2. Graphic Design & Illustration using Adobe Illustrator 2020 (2023. 7. 29)";
+	white-space: pre;
+}

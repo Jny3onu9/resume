@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* 기본폰트 */
+html > body {
+	font-family: "DungGeunMo", sans-serif;
+}
+
+/* 공통부분 구현 시작 */
+
+.h-bar {
+	background-color: #404756;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+
+.h-bar .h-logo {
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.h-bar .nav-title {
+	color: white;
+}
+
+.pc-nav {
+	position: fixed;
+	top: 40px;
+}
+
+.pc-nav-wrap {
+	width: 150px;
+	height: calc(100% - 80px);
+}
+
+.pc-nav-wrap ul {
+	padding: 10px 5px; 
+}
+
+.pc-nav-wrap ul li {
+	height: calc(20% - 20px);
+	width: 100%;
+	margin-top: 20px;
+}
+
+.pc-nav-wrap li a {
+	width: 100%;
+	height: 100%;
+}
+
+.pc-nav-wrap li img {
+	width: 40px;
+	margin: 0 auto;
+}
+
+.pc-nav-wrap li p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.pc-nav-wrap ul li:hover img {
+	opacity: 0.5;
+}
+
+.b-bar {
+	width: 100%;
+	height: 40px;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+	position: fixed;
+	bottom: 0;
+}
+
+.b-bar .b-logo {
+	width: 70px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+}
+
+.b-bar .b-logo img {
+	width: 40px;
+}
+
+.b-bar .time {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	box-shadow: var(--site-btn-boxshadow);
+	display: grid;
+	place-items: center;
+	height: 30px;
+	width: 100px;
+	margin: 0 3px;
+}
+
+.bs-icon {
+	width: 150px;
+	height: 30px;
+	box-shadow: var(--site-btn-boxshadow);
+	margin-left: 10px;
+}
+
+.bs-icon img {
+	width: 26px;
+	margin-right: 10px;
+}
+
+.pc-footer .blank {
+	width: 	calc(100% - 500px);
+}
+
+/* 공통부분 구현 끝 */
+
+/* Card News 구현 시작 */
+
+/* 고정 윈도우 배경, 탑 */
+.cn-window {
+	width: calc(100% - 150px);
+	height: 600px;
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+}
+
+.cn-window-inner .window-nav {
+	background-color: #404756;
+}
+
+.cn-window-inner h3 {
+	width: calc(100% - 69px);
+	color: white;
+	font-size: 22px;
+}
+
+.cn-window-inner .window-btn {
+	box-shadow: var(--site-boxshadow);
+	background: #cac6cb;
+	cursor: pointer;
+}
+
+.cn-window-inner .window-btn h3 {
+	margin-left: 5.5px;
+	margin-bottom: 1px;
+	color: #404756;
+}
+
+/* 윈도우 contents */
+.cn-window-inner h1 {
+	font-size: 30px;
+}
+
+/* 카드 뉴스 리스트 */
+.cn-wrap ul {
+	width: 100%;
+	height: 100%;
+}
+
+.cn-wrap li {
+	width: calc(100% / 4);
+	height: 100%;
+}
+
+.cn-wrap li img {
+	width: 100%;
+}
+
+.cn-wrap .info-title {
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+.cn-wrap .info-tool, .cn-wrap .info-card {
+	margin-top: 10px;
+}
+
+.cn-wrap .info-gonow {
+	margin-top: 10px;
+	background-color: #404756;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	border-radius: 20px;
+}
+
+@keyframes blink-effect {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.cn-wrap .info-gonow:hover {
+	animation: blink-effect 0.5s step-end infinite;
+}
+
+.info-title, .info-tool, .info-card {
+	box-shadow: var(--site-btn-boxshadow);
+	background: #fcfcfc;
+	padding-left: 10px;
+}
+
+.info-gonow a {
+	display: block;
+}
